@@ -704,7 +704,7 @@ __webpack_require__.r(__webpack_exports__);
 class ProductserviceService {
     constructor(http) {
         this.http = http;
-        this.rootUrl = 'http://localhost:3500/products/';
+        this.rootUrl = 'http://54.152.197.238:3500/products/';
     }
     getProducts() {
         return this.http.get(`${this.rootUrl}`);
@@ -1119,7 +1119,7 @@ class UserserviceService {
     constructor(http, session) {
         this.http = http;
         this.session = session;
-        this.rootUrl = 'http://localhost:3500/users/';
+        this.rootUrl = 'http://54.152.197.238:3500/users/';
     }
     checkCredentials(username, password) {
         return this.http.get(`${this.rootUrl}${username}/${password}`);
@@ -1846,7 +1846,7 @@ __webpack_require__.r(__webpack_exports__);
 class OfferserviceService {
     constructor(http) {
         this.http = http;
-        this.rootUrl = "http://localhost:3500/offers/";
+        this.rootUrl = "http://54.152.197.238:3500/offers/";
     }
     addOffer(offer) {
         return this.http.post(this.rootUrl, offer);

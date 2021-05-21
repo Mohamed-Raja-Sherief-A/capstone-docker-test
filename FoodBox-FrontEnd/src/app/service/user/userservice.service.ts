@@ -12,7 +12,7 @@ import { SessionService } from '../session/session.service';
 })
 export class UserserviceService {
   
-  rootUrl:String='http://localhost:3500/users/'
+  rootUrl:String='http://54.152.197.238:3500/users/'
   constructor(private http:HttpClient,private session:SessionService) { }
 
   checkCredentials(username:string,password:string):Observable<User>{
