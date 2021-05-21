@@ -35,7 +35,7 @@
           <div class="input-group" *ngIf="!redeemed && carts.length>0">
             <input type="text" class="form-control" placeholder="Promo code" [(ngModel)]="code">
             <div class="input-group-append">
-              <button type="submit" class="btn btn-secondary" (click)="redeem()">Redeem</button>
+              <button type="submit" class="btn btn-secondary" [disabled]="!code"(click)="redeem()">Redeem</button>
             </div>
           </div>
       </div>

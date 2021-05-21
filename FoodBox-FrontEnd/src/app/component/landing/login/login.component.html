@@ -8,7 +8,7 @@
             <div class="row  mx-auto my-3">
                 <mat-form-field>
                     <mat-label>Username</mat-label>
-                    <input matInput placeholder="Enter Username" formControlName="username"> 
+                    <input id="login-username" matInput placeholder="Enter Username" formControlName="username"> 
                     <mat-error>
                         <div *ngIf="loginForm.get('username').hasError('required')">Username Required</div>
                     </mat-error>
@@ -17,14 +17,14 @@
             <div class="row mx-auto my-3">
                 <mat-form-field>
                     <mat-label>Password</mat-label>
-                    <input type="password" matInput placeholder="Enter Password" formControlName="password"> 
+                    <input id="login-password" type="password" matInput placeholder="Enter Password" formControlName="password"> 
                     <mat-error>
                         <div *ngIf="loginForm.get('password').hasError('required')">Password Required</div>
                     </mat-error>
                 </mat-form-field>
             </div>
             <div class="row mx-auto mt-5">
-              <button type="submit" class="btn btn-md btn-success mx-auto" [disabled]="!loginForm.valid" >Log In</button>
+              <button type="submit" id="login-confirm" class="btn btn-md btn-success mx-auto" [disabled]="!loginForm.valid" >Log In</button>
             </div>
         </form>
      
