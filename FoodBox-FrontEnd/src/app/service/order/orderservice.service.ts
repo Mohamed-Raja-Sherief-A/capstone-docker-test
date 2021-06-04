@@ -7,7 +7,7 @@ import { Order } from 'src/app/interface/order/order';
   providedIn: 'root'
 })
 export class OrderserviceService {
-  rootUrl:string="http://34.227.205.224:3500/orders/";
+  rootUrl:string="http://3.89.218.253:3500/orders/";
   constructor(private http:HttpClient) { }
   addOrder(order:Order):Observable<Order>{
     return this.http.post<Order>(this.rootUrl,order);
