@@ -836,7 +836,7 @@ __webpack_require__.r(__webpack_exports__);
 class OrderserviceService {
     constructor(http) {
         this.http = http;
-        this.rootUrl = "http://3.89.218.253:3500/orders/";
+        this.rootUrl = "http://52.90.93.8:3500/orders/";
     }
     addOrder(order) {
         return this.http.post(this.rootUrl, order);
