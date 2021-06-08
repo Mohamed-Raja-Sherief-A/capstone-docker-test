@@ -7,7 +7,7 @@ import { Product } from 'src/app/interface/product/product';
   providedIn: 'root'
 })
 export class ProductserviceService {
- rootUrl:string='http://52.90.93.8:3500/products/'
+ rootUrl:string='http://54.205.86.163:3500/products/'
   constructor(private http:HttpClient) { }
 
   getProducts():Observable<Product[]>{
