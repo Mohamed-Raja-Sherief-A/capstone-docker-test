@@ -7,7 +7,7 @@ import { Offer } from 'src/app/interface/offer/offer';
   providedIn: 'root'
 })
 export class OfferserviceService {
-  rootUrl:string="http://3.89.218.253:3500/offers/";
+  rootUrl:string="http://52.90.93.8:3500/offers/";
   constructor(private http:HttpClient) { }
   addOffer(offer:Offer):Observable<Offer>{
     return this.http.post<Offer>(this.rootUrl,offer);
